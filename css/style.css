@@ -231,6 +231,7 @@ button {
   margin-top: 131px;
   background: #034153;
   width: 100%;
+  padding-bottom: 181px;
 }
 
 .services__title {
@@ -246,6 +247,7 @@ button {
   margin: auto;
   position: relative;
   top: -30px;
+  text-transform: uppercase;
 }
 
 .services__posttitle {
@@ -342,6 +344,32 @@ button {
 
   .header__nav__item {
     margin-bottom: 30px;
+  }
+
+  .services {
+    padding-bottom: 90px;
+  }
+
+  .services__posttitle {
+    margin-bottom: 35px;
+  }
+
+  .services__points {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .services__point {
+    margin-bottom: 25px;
+  }
+
+  .services__point :last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -452,6 +480,43 @@ button {
   .info__button {
     padding: 11px 37px;
     max-width: 232px;
+  }
+
+  .services {
+    padding-bottom: 90px;
+    background-color: #ffffff;
+  }
+
+  .services__title {
+    font-size: 30px;
+    line-height: 37px;
+    width: 100%;
+    position: static;
+    top: 0px;
+    margin-bottom: 30px;
+    padding: 7px 0 7px 0;
+  }
+
+  .services__posttitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #034153;
+    margin-bottom: 17px;
+  }
+
+  .services__point {
+    width: 282px;
+    height: 231px;
+    border: 3px solid #034153;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 45px;
+    margin-bottom: 25px;
+  }
+
+  .services__point :last-child {
+    margin-bottom: 0;
   }
 }
 
