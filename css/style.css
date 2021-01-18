@@ -166,6 +166,10 @@ button {
   max-width: 422px;
 }
 
+.info__text .info__photo-block {
+  display: none;
+}
+
 .info__photo-block {
   width: 367px;
   height: 530px;
@@ -208,6 +212,10 @@ button {
   display: block;
   margin: auto;
   margin-top: 37px;
+}
+
+.buttonLink {
+  text-decoration: none;
 }
 
 .mobile-posttitle__img {
@@ -605,6 +613,15 @@ button {
 }
 
 @media (max-width: 940px) {
+  .info__photo-block {
+    display: none;
+  }
+
+  .info__text .info__photo-block {
+    display: block;
+    margin-top: 20px;
+  }
+
   .main {
     margin-top: 59px;
   }
@@ -746,6 +763,10 @@ button {
 }
 
 @media (max-width: 610px) {
+  .info__text .info__photo-block {
+    display: none;
+  }
+
   .info__photo-block {
     display: none;
   }
@@ -909,14 +930,14 @@ button {
 
 @media (max-width: 460px) {
   .open {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     right: 16px;
     top: 21px;
   }
 
   .open-stick {
-    width: 20px;
+    width: 30px;
     height: 4px;
     background: #034153;
     margin-bottom: 4px;
