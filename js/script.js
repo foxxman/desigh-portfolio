@@ -1,5 +1,6 @@
 const buttonOpen = document.querySelector(".open");
 const headerNav = document.querySelector(".header__nav");
+const body = document.querySelector('body');
 const pointDescr = document.getElementsByClassName(
   "services__point__descriotion"
 );
@@ -11,6 +12,7 @@ const pointTextMobile = [
 
 $(document).ready(function () {
   new WOW().init();
+  //прокрутка до формы
   $("a.buttonLink").click(function () {
     $("html, body").animate(
       {
@@ -23,6 +25,7 @@ $(document).ready(function () {
     );
     return false;
   });
+  //прокрутка до раздела
   $("a.header__nav__item").click(function () {
     $("html, body").animate(
       {
@@ -37,9 +40,19 @@ $(document).ready(function () {
     headerNav.classList.remove("header__nav-active");
     return false;
   });
+
+  // console.log(window.innerWidth);
+//открытие окна навигации на мобилках
   buttonOpen.addEventListener("click", () => {
     buttonOpen.classList.toggle("open-active");
     headerNav.classList.toggle("header__nav-active");
+    
+    if(headerNav.classList.contains("header__nav-active")){
+      body.style = "overflow: hidden;";
+    }else{
+      body.style = "overflow: visible;";
+    }
+    // "animate__animated",'animate__fadeInRight'
   });
 
   if (window.innerWidth < 610)
