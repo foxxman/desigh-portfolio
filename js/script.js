@@ -11,7 +11,6 @@ const pointTextMobile = [
 
 $(document).ready(function () {
   new WOW().init();
-  //прокрутка до формы
   $("a.buttonLink").click(function () {
     $("html, body").animate(
       {
@@ -24,7 +23,6 @@ $(document).ready(function () {
     );
     return false;
   });
-  //прокрутка до раздела
   $("a.header__nav__item").click(function () {
     $("html, body").animate(
       {
@@ -39,13 +37,9 @@ $(document).ready(function () {
     headerNav.classList.remove("header__nav-active");
     return false;
   });
-
-  // console.log(window.innerWidth);
-//открытие окна навигации на мобилках
   buttonOpen.addEventListener("click", () => {
     buttonOpen.classList.toggle("open-active");
     headerNav.classList.toggle("header__nav-active");
-    // "animate__animated",'animate__fadeInRight'
   });
 
   if (window.innerWidth < 610)
